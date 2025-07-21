@@ -21,11 +21,10 @@
     <div class="page-header-bottom">
         <div class="sub-title"><strong>{{ cl.opts.verbose_name_plural|capfirst }}</strong></div>
         {# Botão Adicionar (se permitido) #}
-        <div class="object-tools">
             {% if has_add_permission %}
             <a href="add/" class="btn-add">+ Adicionar</a>
             {% endif %}
-        </div>
+        
     </div>
     <div class="filters-search-container">
         {% block search %}
