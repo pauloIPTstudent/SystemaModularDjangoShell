@@ -1,0 +1,125 @@
+/* Estiliza o botão "Add New" no topo das páginas */
+button.btn-primary,
+.object-tools, .btn {
+    background-color: #4c6ef5 !important;
+    color: white !important;
+    padding: 8px 16px !important;
+    border-radius: 0.2rem !important;
+    font-size: 0.9rem !important;
+    text-decoration: nonem !important;
+}
+
+.border-bottom {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.content-wrapper>.content {
+    padding: 0px 1.5rem !important;
+}
+
+.custom-changelist-container {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.2rem;
+    background: white;
+    padding: 0rem 1.2rem;
+}
+
+.page-header-top,
+.page-header-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    background: transparent;
+    border: none;
+}
+
+.page-header-top {
+    padding: 1rem 0px;
+}
+
+.page-header-bottom {
+    border-bottom: 1px solid #f4f6fa;
+    padding: 1.6rem 1.2rem;
+
+}
+
+.page-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.filters-search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    padding-top: 1.5rem;
+}
+
+.breadcrumbs {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.breadcrumbs a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.sub-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+
+/* Tabela do admin */
+.change-list table {
+    background: white !important;
+    /* para controlar espaçamento */
+    width: 100%;
+}
+
+
+
+/* Remove as listras zebra */
+.change-list tbody tr:nth-child(odd),
+.change-list tbody tr:nth-child(even) {
+    background: white !important;
+}
+
+.card {
+    box-shadow: none !important;
+}
+
+/* Hover suave para linhas */
+
+
+/* Remove a linha feia de separação */
+.card-header,
+.custom-header,
+.custom-changelist-container {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Botão adicionar */
+.btn-add {
+    background-color: #4c6ef5;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+

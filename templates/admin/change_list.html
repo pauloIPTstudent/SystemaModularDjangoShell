@@ -1,0 +1,55 @@
+{% extends "admin/change_list.html" %}
+{% block object-tools %}
+{% endblock %}
+{% block content_title %}
+{% endblock %}
+{% block breadcrumbs %}
+{% endblock %}
+{% block content %}
+<div class="page-header-top">
+    <div class="page-title">{{ cl.opts.verbose_name_plural|upper }}</div>
+    <div class="breadcrumbs" style="font-size: 0.9rem; color: #666;">
+        <a href="{% url 'admin:index' %}">Home</a> &rsaquo;
+        <a href="{% url 'admin:app_list' app_label=cl.opts.app_label %}">{{ cl.opts.app_config.verbose_name }}</a>
+        &rsaquo;
+        <span>{{ cl.opts.verbose_name_plural|capfirst }}</span>
+    </div>
+</div>
+<div class="custom-changelist-container">
+
+    {# Cabeçalho simplificado com título e breadcrumbs #}
+    <div class="page-header-bottom">
+        <div class="sub-title"><strong>{{ cl.opts.verbose_name_plural|capfirst }}</strong></div>
+        {# Botão Adicionar (se permitido) #}
+        <div class="object-tools">
+            {% if has_add_permission %}
+            <a href="add/" class="btn-add">+ Adicionar</a>
+            {% endif %}
+        </div>
+    </div>
+    <div class="filters-search-container">
+        {% block search %}
+        {{ block.super }}
+        {% endblock %}
+
+
+
+
+    </div>
+
+
+    <div style="margin: 1rem;">
+        {# Lista de resultados #}
+        {% block result_list %}
+        {{ block.super }}
+        {% endblock %}
+
+        {# Paginação #}
+        {% block pagination %}
+        {{ block.super }}
+        {% endblock %}
+    </div>
+
+
+</div>
+{% endblock %}
