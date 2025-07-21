@@ -3,10 +3,21 @@ button.btn-primary,
 .object-tools, .btn {
     background-color: #4c6ef5 !important;
     color: white !important;
-    padding: 8px 16px !important;
+    padding: 8px 16px;
+    margin: 10px 10px;
     border-radius: 0.2rem !important;
-    font-size: 0.9rem !important;
+    font-size: 0.9rem;
     text-decoration: nonem !important;
+}
+/* Botão adicionar */
+.btn-add {
+    background-color: #4c6ef5;
+    color: white !important;
+    margin: 0px !important;
+    padding: 8px 16px;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    text-decoration: none;
 }
 
 .border-bottom {
@@ -113,13 +124,5 @@ button.btn-primary,
     box-shadow: none !important;
 }
 
-/* Botão adicionar */
-.btn-add {
-    background-color: #4c6ef5;
-    color: white !important;
-    padding: 8px 16px;
-    border-radius: 0.2rem;
-    font-size: 0.9rem;
-    text-decoration: none;
-}
+
 

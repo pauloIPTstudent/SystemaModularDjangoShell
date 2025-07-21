@@ -22,7 +22,9 @@ from django.shortcuts import render
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('api/', include('agenda.urls')),  ]
+    path('api/', include('agenda.api_urls')),
+    path('agenda/', include('agenda.urls')),          # <-- para páginas web públicas
+     ]
 
 def error_view(request, exception=None):
     return render(request, "error.html", status=500)
